@@ -86,7 +86,7 @@ function HomePageContent() {
                 <div className={"col-lg-8 col-12 mapz"}>
                     <MapContainer
                         center={state.coordinate} //coppia di coordinate in cui centrare la mappa inizialmente
-                        zoom={6}>
+                        zoom={8}>
                         <TileLayer url={"https://tile.openstreetmap.org/{z}/{x}/{y}.png"} />
                         <LocationMarker/>
                     </MapContainer>
