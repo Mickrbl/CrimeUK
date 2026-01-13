@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+.nav {
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.buttons {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.spazio {
+    justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rad {
+    border-radius: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.leaflet-container {
+    height: 91vh;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.smallmap{
+    height: 40vh;
+    width: 40vh;
 }
 
-.App-link {
-  color: #61dafb;
+.map {
+
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Thumb {
+    height: 20em;
+    width: 100%;
+    cursor: pointer;
 }
+
+
+
+
+/* rimuove il bordo*/
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+/* linee */
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #777777;
+    display: block;
+    transition: all 0.2s;
+}
+
+/* spazio tra le linee */
+.middle-bar{
+    margin: 5px auto;
+}
+
+/* animazione */
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* colore x*/
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: #777777;
+}
+
+.mr-n5 {
+    margin-right: -1.25rem !important;
+}
+
+.grafico {
+    width: 150vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.request-popup .leaflet-popup-content-wrapper {
+    border-radius: 0;
+}
+
+.alertx {
+    z-index: 1;
+    position:absolute;
+    left: 55px;
+    top: 11px;
+}
+
+.mapz {
+    z-index: 0;
+}
+
+.min-s {
+    min-height: 500px
+}
+
+.cards {
+    height: 50vh;
+}
+
+.mtop {
+    margin-top: 210px;
+}
+
+.accordion-borderless {
+    border: none;
+}
+.minimum {
+    min-width: 300px;
+}
+
+
+
