@@ -44,6 +44,24 @@ function Conto(x: CategoriaProps[]) {
 }
 
 
+function monthLabel(m: string): string {
+    const mesi: Record<string,string> = {
+        "01": "January",
+        "02": "February",
+        "03": "March",
+        "04": "April",
+        "05": "May",
+        "06": "June",
+        "07": "July",
+        "08": "August",
+        "09": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+    }
+    return mesi[m] || m
+}
+
 
 /*function HomePageContent(){
     const {state,dispatch} = useContext(StateContext)
@@ -62,13 +80,6 @@ function HomePageContent() {
         // Aggiorna lo stato globale
         dispatch(setCategorie(conteggio));
     }, [state.crime, dispatch]);
-
-
-
-
-
-
-
 
 
 
@@ -97,10 +108,10 @@ function HomePageContent() {
 
                 <div className=" d-lg-none accordion-item col accordion-borderless ">
                     <h2 className="accordion-header" id="headingTwo">
-                        <button className="accordion-button bg-white accordion-borderless" type="button"
+                        <button className="accordion-button bg-white accordion-borderless fw-bold" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                 aria-expanded="true" aria-controls="collapseTwo">
-                            Select Year and Month
+                            {monthLabel(state.month)} {state.year}
                         </button>
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse show"
@@ -108,7 +119,7 @@ function HomePageContent() {
                         <div className="accordion-body">
 
 
-                            <div className={"col-lg col-12 mx-auto px-5 pt-lg-3 py-2"}>
+                            <div className={"col-lg col-12 mx-auto pt-lg-3 py-2"}>
 
                                 <h5>Select year and month</h5>
                                 <select className="form-select" aria-label="Default select example" onChange={e =>dispatch(setYear(e.target.value))}>
@@ -133,7 +144,7 @@ function HomePageContent() {
 
                                 <div>{ (state.coordinate===initialState.coordinate || state.loading || state.error) ? ""
                                     : (state.crime.length!==0)?
-                                        <div className="alert alert-secondary mt-4 rad m-3 " role="alert">
+                                        <div className="alert alert-secondary mt-4 rad m-3" role="alert">
 
 
 
