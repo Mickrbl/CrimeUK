@@ -27,7 +27,7 @@ function LocationMarker() {
             click: (e: LeafletMouseEvent) => {
                 const coord = e.latlng
                 dispatch(setCoordinate(coord))
-                map.flyTo(coord, 10)
+                map.flyTo(coord, 14)
             }
         }
     )
