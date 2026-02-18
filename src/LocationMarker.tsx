@@ -13,13 +13,10 @@ function Normalizza_categoria(s:CrimeProps){
     return nome[0].toUpperCase()+nome.slice(1).replace(/[-]/g, ' ')
 }
 
-
 function LocationMarker() {
 
     const {state, dispatch} = useContext(StateContext)
-
     const Navigate=useNavigate()
-
 
     const map = useMap()
     useMapEvents(
@@ -32,7 +29,6 @@ function LocationMarker() {
         }
     )
 
-
     useEffect( () => {
         if (state.coordinate === initialState.coordinate) return
         fetch(`https://data.police.uk/api/crimes-street/all-crime?lat=${state.coordinate.lat}&lng=${state.coordinate.lng}&date=${state.year}-${state.month}`)
@@ -40,9 +36,6 @@ function LocationMarker() {
             .then( j => j!== null ? dispatch(setCrime(j)) : dispatch(setCrime([])) )
             .catch( e => dispatch(setError(e)) )
     }, [state.coordinate, state.year,state.month, dispatch])
-
-
-
     return(
         <div>
 
@@ -60,10 +53,8 @@ function LocationMarker() {
                     <Popup className={"request-popup"}> <b>{ Normalizza_categoria(s) }</b><small className={"text-muted"}>: click for more</small> </Popup>
                 </Marker>
             )}
-
         </div>
     )
-
 }
 
 

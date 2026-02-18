@@ -7,7 +7,6 @@ function Home(){
         <div className={"minimum"}>
             <Navbar/>
             <Outlet/>
-
         </div>
     )
 }

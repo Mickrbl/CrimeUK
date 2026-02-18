@@ -19,12 +19,11 @@ export const StateContext = createContext<AppContext>(
 function App() {
     const [state,dispatch] = useReducer(reducer, initialState)
     return (
+
         <StateContext.Provider value={{state,dispatch}}>
-
             <ContentPane/>
-
-
         </StateContext.Provider>
+
     );
 }
 
