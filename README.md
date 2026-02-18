@@ -48,7 +48,7 @@ The application dynamically updates based on user-selected map coordinates and r
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/mickrbl.dev.git
-cd mickrbl.dev
+cd mickrbl.dev```
 
 2. Install dependencies:
   
