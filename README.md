@@ -46,9 +46,9 @@ The application dynamically updates based on user-selected map coordinates and r
 
 1. Clone the repository:
 
-bash
+```bash
 git clone https://github.com/YOUR-USERNAME/crimeuk.git
-cd crimeuk
+cd crimeuk```
 
 2. Install dependencies:
   
@@ -66,7 +66,8 @@ The application is deployed on Vercel with automatic builds from the GitHub repo
 
 This project was built to strengthen frontend architecture, API consumption, state management patterns (Context & Reducer), and data visualization techniques using React and TypeScript.
 
---- # 🇮🇹 Versione Italiana
+--- 
+# 🇮🇹 Versione Italiana
 
 CrimeUK è un'applicazione frontend che visualizza i dati sui crimini nel Regno Unito tramite una mappa interattiva e dashboard statistiche.
 
