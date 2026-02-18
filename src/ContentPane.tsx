@@ -5,7 +5,6 @@ import Home from "./Home";
 import HomePageContent from "./HomePageContent";
 import Statistiche from "./Statistiche";
 import Dettaglio from "./Dettaglio";
-import TestPage from "./TestPage";
 
 
 function ContentPane () {
