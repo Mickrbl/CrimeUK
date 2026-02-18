@@ -1,46 +1,83 @@
-# Getting Started with Create React App
+# CrimeUK
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CrimeUK is a frontend web application that visualizes crime data across the United Kingdom through an interactive map and statistical dashboards.
 
-## Available Scripts
+The application fetches real-time crime data from public UK Police APIs and displays it dynamically based on user-selected geographic areas.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Live Demo
+[Live Application](https://crime-uk.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🧱 Tech Stack
 
-### `npm test`
+- React
+- TypeScript
+- Leaflet (interactive maps)
+- REST API integration (UK Police API)
+- Context API
+- useState / useReducer
+- Chart-based data visualization
+- Deployed on Vercel
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Interactive UK map powered by Leaflet
+- Clickable geographic areas with dynamic crime data
+- Fetching and processing JSON data from UK Police API
+- State management using Context API and useReducer
+- Statistics page with crime rate visualizations
+- Responsive UI
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔌 API Integration
 
-### `npm run eject`
+Crime data is retrieved from the official UK Police public API in JSON format.  
+The application dynamically updates based on user-selected map coordinates and radius.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Run Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Clone the repository:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  ```bash
+  git clone https://github.com/YOUR-USERNAME/crimeuk.git
+  cd crimeuk
 
-## Learn More
+2. Install dependencies:
+  
+  npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  npm run dev
+
+**Deployment**
+
+The application is deployed on Vercel with automatic builds from the GitHub repository.
+
+**Project Goal**
+
+This project was built to strengthen frontend architecture, API consumption, state management patterns (Context & Reducer), and data visualization techniques using React and TypeScript.
+
+--- # 🇮🇹 Versione Italiana
+
+CrimeUK è un'applicazione frontend che visualizza i dati sui crimini nel Regno Unito tramite una mappa interattiva e dashboard statistiche.
+
+L'applicazione recupera dati in formato JSON dall'API pubblica della UK Police e aggiorna dinamicamente i risultati in base all'area geografica selezionata.
+
+[Live Application](https://crime-uk.vercel.app/)
+
+Il progetto è stato sviluppato per approfondire:
+
+- architettura frontend con React
+- gestione dello stato con Context API e useReducer
+- integrazione API REST
+- visualizzazione dati tramite grafici
+- deploy su Vercel
