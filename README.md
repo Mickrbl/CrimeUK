@@ -46,7 +46,7 @@ The application dynamically updates based on user-selected map coordinates and r
 
 1. Clone the repository:
 
-```bash
+bash
 git clone https://github.com/YOUR-USERNAME/crimeuk.git
 cd crimeuk
 
