@@ -21,6 +21,7 @@ function Normalizza_singolo(s:string){
     let nome = s
     return nome[0].toUpperCase()+nome.slice(1).replace(/[-]/g, ' ')
 }
+
 function lista ( crime: CrimeProps ) : CategoriaProps {
     return {
         categoria: crime.category,
@@ -123,8 +124,7 @@ function HomePageContent() {
 
                                 <h5>Select year and month</h5>
                                 <select className="form-select" aria-label="Default select example" onChange={e =>dispatch(setYear(e.target.value))}>
-                                    <option selected>2023</option>
-                                    <option value="2024">2024</option>
+                                    <option selected>2024</option>
                                     <option value="2025">2025</option>
                                 </select>
                                 <select className="form-select" aria-label="Default select example" onChange={e=>dispatch(setMonth(e.target.value))}>
@@ -219,8 +219,7 @@ function HomePageContent() {
 
                     <h5>Select year and month to analyze</h5>
                     <select className="form-select" aria-label="Default select example" onChange={e =>dispatch(setYear(e.target.value))}>
-                        <option selected>2023</option>
-                        <option value="2024">2024</option>
+                        <option selected>2024</option>
                         <option value="2025">2025</option>
                     </select>
                     <select className="form-select" aria-label="Default select example" onChange={e=>dispatch(setMonth(e.target.value))}>

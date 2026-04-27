@@ -28,7 +28,7 @@ export const initialState: State = {
     categorie: [],
     coordinate : new LatLng(52.629729,-1.131592),
     selected: undefined,
-    year: "2023",
+    year: "2024",
     month: "01",
 
 }
